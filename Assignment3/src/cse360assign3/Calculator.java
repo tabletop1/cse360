@@ -1,3 +1,8 @@
+/** This class models a desktop calculator with only basic arithmetic functionalities.
+ * 
+ * @author Dennis Hoang
+ * @version Feb 22, 2016.
+ */
 package cse360assign3;
 
 public class Calculator {
