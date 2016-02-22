@@ -10,10 +10,10 @@ public class Calculator {
 	
 	/** returns the value of private instance total
 	 * 
-	 * @return 0
+	 * @return total
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/** adds a value to the total
@@ -21,7 +21,7 @@ public class Calculator {
 	 * @param value		integer to add to total
 	 */
 	public void add (int value) {
-		
+		total += value;
 	}
 	
 	/** subtracts a value from the total
@@ -29,7 +29,7 @@ public class Calculator {
 	 * @param value		integer to subtract from total
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	
 	/** multiplies the total by a value
@@ -37,7 +37,7 @@ public class Calculator {
 	 * @param value		integer to multiply with the total
 	 */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	
 	/** divides the total by a value
@@ -45,7 +45,10 @@ public class Calculator {
 	 * @param value		integer to divide from the total
 	 */
 	public void divide (int value) {
-		
+		if(value == 0)
+			total = 0;
+		else
+			total /= value;
 	}
 	
 	/** returns a history of all actions
